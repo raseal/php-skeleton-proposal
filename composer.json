@@ -10,5 +10,32 @@
     "psr-4": {
       "Test\\": "tests"
     }
+  },
+  "extra": {
+    "bin-dir": "apps/SymfonyClient/bin",
+    "config-dir": "apps/SymfonyClient/config",
+    "src-dir": "apps/SymfonyClient/src",
+    "var-dir": "apps/SymfonyClient/var",
+    "public-dir": "apps/SymfonyClient/public"
+  },
+  "require": {
+    "symfony/flex": "^2.2.2",
+    "symfony/framework-bundle": "6.2.*",
+    "symfony/dotenv": "6.2.*",
+    "symfony/yaml": "6.3.*",
+    "symfony/console": "6.3.*",
+    "symfony/runtime": "6.2.*"
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/flex": true,
+      "symfony/runtime": true
+    }
+  },
+  "scripts": {
+    "auto-scripts": {
+      "cache:clear": "symfony-cmd",
+      "assets:install %PUBLIC_DIR%": "symfony-cmd"
+    }
   }
 }

@@ -40,3 +40,10 @@ shell:
 ## install:	Install packages
 composer-install:
 	docker-compose exec php_container composer install
+
+## test:		Run all tests inside Docker
+test:
+	@docker-compose exec php_container make run-unit-tests
+
+run-unit-tests:
+	XDEBUG_MODE=coverage ./vendor/bin/phpunit --exclude-group='disabled' --coverage-html build --testsuite myProject

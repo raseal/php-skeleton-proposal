@@ -9,3 +9,9 @@
 /apps/SymfonyClient/public/bundles/
 /apps/SymfonyClient/var/
 ###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+/build/
+###< phpunit/phpunit ###

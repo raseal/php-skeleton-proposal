@@ -7,3 +7,8 @@ create-user:
     path: /user
     controller: SymfonyClient\Controller\CreateUserController
     methods: [POST]
+
+retrieve-user:
+    path: /user/{userId}
+    controller: SymfonyClient\Controller\RetrieveUserController
+    methods: [GET]

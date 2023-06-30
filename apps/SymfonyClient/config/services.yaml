@@ -16,6 +16,8 @@ services:
         resource: '../src/'
     Shared\:
         resource: '../../../src/Shared/'
+    Backoffice\:
+        resource: '../../../src/Backoffice/'
 
     # Controller
     Shared\Infrastructure\Symfony\Controller\ApiExceptionListener:

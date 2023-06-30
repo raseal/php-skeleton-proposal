@@ -1,9 +1,4 @@
-#controllers:
-#    resource:
-#        path: ../src/Controller/
-#        namespace: SymfonyClient\Controller
-#    type: attribute
 health:
-    path: /
+    path: /health
     controller: SymfonyClient\Controller\HealthController
     methods: [GET]

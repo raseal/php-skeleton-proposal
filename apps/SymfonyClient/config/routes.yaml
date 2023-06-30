@@ -2,3 +2,8 @@ health:
     path: /health
     controller: SymfonyClient\Controller\HealthController
     methods: [GET]
+
+create-user:
+    path: /user
+    controller: SymfonyClient\Controller\CreateUserController
+    methods: [POST]

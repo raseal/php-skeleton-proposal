@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shared\Infrastructure\Controller;
+namespace Shared\Infrastructure\Symfony\Controller;
 
 use InvalidArgumentException;
 use Symfony\Component\HttpFoundation\Response;

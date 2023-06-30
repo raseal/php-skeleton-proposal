@@ -25,7 +25,8 @@
     "symfony/yaml": "6.3.*",
     "symfony/console": "6.3.*",
     "symfony/runtime": "6.2.*",
-    "ramsey/uuid": "^4.7"
+    "ramsey/uuid": "^4.7",
+    "symfony/messenger": "6.2.*"
   },
   "config": {
     "allow-plugins": {

@@ -16,9 +16,14 @@ class UuidValueObject extends StringValueObject implements Id
         parent::__construct($value);
     }
 
-    public static function random(): self
+    public static function random(): static
     {
         return new static(Uuid::uuid4()->toString());
+    }
+
+    public static function fromId(Id $id): static
+    {
+        return new static($id->value());
     }
 
     private function assertIsValidUuid(string $value): void

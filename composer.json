@@ -24,7 +24,8 @@
     "symfony/dotenv": "6.2.*",
     "symfony/yaml": "6.3.*",
     "symfony/console": "6.3.*",
-    "symfony/runtime": "6.2.*"
+    "symfony/runtime": "6.2.*",
+    "ramsey/uuid": "^4.7"
   },
   "config": {
     "allow-plugins": {
